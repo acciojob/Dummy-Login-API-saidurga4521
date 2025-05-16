@@ -61,7 +61,12 @@ const App = () => {
           value={input}
           onChange={handleEmailChange}
         />
-        {enable1 && <p id="user-error">User not found</p>}
+        <p
+          id="user-error"
+          style={{ color: "red", display: enable1 ? "block" : "none" }}
+        >
+          User not found
+        </p>
         <br />
         <input
           type="Password"
@@ -69,11 +74,13 @@ const App = () => {
           value={password}
           onChange={handlePasswordChange}
         />
-        {enable2 && (
-          <p style={{ color: "red" }} id="password-error">
-            Password Incorrect
-          </p>
-        )}
+        <p
+          id="password-error"
+          style={{ color: "red", display: enable2 ? "block" : "none" }}
+        >
+          Password Incorrect
+        </p>
+
         <br />
         <button id="submit-form-btn" onClick={handleClick}>
           Submit
