@@ -1,4 +1,5 @@
 import React from "react";
+import "./../styles/App.css";
 import { useState } from "react";
 const data = [
   {
@@ -60,11 +61,7 @@ const App = () => {
           value={input}
           onChange={handleEmailChange}
         />
-        {enable1 && (
-          <p style={{ color: "red" }} id="user-error">
-            User not found
-          </p>
-        )}
+        {enable1 && <p id="user-error">User not found</p>}
         <br />
         <input
           type="Password"

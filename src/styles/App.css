@@ -1,12 +1,17 @@
 h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+  color: #27aedb;
+  text-align: center;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+button {
+  color: #27aedb;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#user-error {
+  color: red;
+}
+#password-error {
+  color: red;
 }
